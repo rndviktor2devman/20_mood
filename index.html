@@ -6,15 +6,6 @@
   <link rel='stylesheet' href= "static/css/main.css" type='text/css' media='all'>
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Gentium+Basic:400,700" rel="stylesheet">
   <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
-  <script>
-    $(document).ready(function()
-    {
-      var data = JSON.parse($("#quotes_json").html());
-      var randomData = data[Math.floor(Math.random() * data.length)];
-      $("h1#phrase").html(randomData.phrase).show();
-      $("p#signature").html(randomData.signature).show();
-    })
-  </script>
   <script id="quotes_json" type="application/json">
     [
       {
@@ -39,5 +30,14 @@
     </div>
   </div>
 </div>
+<script>
+    $(document).ready(function()
+    {
+      var data = JSON.parse($("#quotes_json").html());
+      var randomData = data[Math.floor(Math.random() * data.length)];
+      $("h1#phrase").html(randomData.phrase).show();
+      $("p#signature").html(randomData.signature).show();
+    })
+  </script>
 </body>
 </html>
