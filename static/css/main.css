@@ -12,10 +12,10 @@ body {
     margin: auto;
 }
 
-h1 {
+.text-info {
     font-size: 60px;
 }
 
-p {
+.signature {
     font-size: 18px;
 }
